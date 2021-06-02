@@ -9,7 +9,7 @@ let scorpion={
 };
 let kitana={
     name:'Kitana',
-    hp: 80,
+    hp: 90,
     img: 'http://reactmarathon-api.herokuapp.com/assets/kitana.gif',
     weapon: ['нож','меч'],
     attack() {
@@ -26,7 +26,7 @@ function createPlayer(player, obj) {
     
         let $life=document.createElement('div');
         $life.classList.add('life');
-        $life.style.width='100%';
+        $life.style.width=obj.hp+'%';
         $progressbar.appendChild($life);
     
         let $name=document.createElement('div');
